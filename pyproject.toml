@@ -10,9 +10,13 @@ dependencies = [
     "einops",
     "tqdm",
     "pillow",
+    "jaxtyping",
 ]
 
 [project.optional-dependencies]
 tracking = ["wandb"]
 perceptual = ["lpips"]
 dev = ["jupyter", "matplotlib"]
+
+[tool.ruff.lint]
+extend-select = ["I"]
